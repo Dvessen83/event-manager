@@ -42,7 +42,10 @@ class VisitorsController < ApplicationController
 
     visitor_params = params.require(:visitor).permit(:first_name, :last_name, :age, :image_url, :payment_method, :event_id)
 
-    if @visitor.update_attributes(visitor_params)
+    event = Event.find(params[:visitor][:event_id])
+
+    if event.visitors.count < event.capacity
+      @visitor.update_attributes(visitor_params)
       redirect_to @visitor
     else
       render "edit"

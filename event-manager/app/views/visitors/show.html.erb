@@ -8,6 +8,5 @@ edit_visitor_path(@visitor.id) %>
 <p>Age: <%= @visitor.age %></p>
 <%= image_tag @visitor.image_url %>
 
-
-<p><%= @visitor.event.name %></p>
+<p><%= link_to @visitor.event.name, event_path(@visitor.event_id)  %></p>
 <%= image_tag @visitor.event.image_url %>
