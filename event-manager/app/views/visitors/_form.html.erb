@@ -1,23 +1,23 @@
-<%= form_for @visitor do |f| %>
+<p><%= form_for @visitor do |f| %>
 
-  <%= f.label : event_id %>
-  <%= f.collection_select(:event_id, Event.all, :id, :name)%>
+  <p><%= f.label :event_id %>
+  <%= f.collection_select(:event_id, Event.all, :id, :name)%></p>
 
-  <%= f.label :first_name %>
-  <%= f.text_field :first_name %>
+  <p><%= f.label :first_name %>
+  <%= f.text_field :first_name %></p>
 
-  <%= f.label :last_name %>
-  <%= f.text_field :last_name %>
+  <p><%= f.label :last_name %>
+  <%= f.text_field :last_name %></p>
 
-  <%= f.label :age %>
-  <%= f.number_field :age %>
+  <p><%= f.label :age %>
+  <%= f.number_field :age %></p>
 
-  <%= f.label :image_url %>
-  <%= f.text_field :image_url %>
+  <p><%= f.label :image_url %>
+  <%= f.text_field :image_url %></p>
 
-  <%= f.label :payment_method %>
-  <%= f.text_field :payment_method %>
+  <p><%= f.label :payment_method %>
+  <%= f.text_field :payment_method %></p>
 
-  <%= f.submit (@visitor.new_record? ? "Create" : "Update") %>
+  <p><%= f.submit (@visitor.new_record? ? "Create" : "Update") %></p>
 
-<% end %>
+<% end %></p>
