@@ -19,7 +19,12 @@ class VisitorsController < ApplicationController
 
     @visitor = Visitor.new(visitor_params)
 
-    if @visitor.save
+    event = Event.find(params[:visitor][:event_id])
+
+    if event.visitors.count < event.capacity
+
+      @visitor.save
+
       redirect_to @visitor
     else
       render 'new'
