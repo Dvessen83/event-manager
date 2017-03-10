@@ -1,5 +1,6 @@
 <h1>Visitors</h1>
 
 <% @visitors.each do |visitor| %>
-  <p><%= visitor.first_name %> <%= visitor.last_name %></p>
+  <p><%= link_to (visitor.first_name + " " + visitor.last_name),
+  visitor_path(visitor.id) %></p>
 <% end %>
