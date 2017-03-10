@@ -1,5 +1,8 @@
 <h1>Events</h1>
 
 <% @events.each do |event| %>
-  <p><%= event.name %></p>
+  <p><%= link_to event.name, event_path(event.id) %></p>
 <% end %>
+
+#nog aanpassen naar visitor
+<%= link_to "Book now", events_path %>
