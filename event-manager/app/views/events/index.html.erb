@@ -1,8 +1,21 @@
-<h1>Events</h1>
+<header>
+    <div class="wrapper">
+        <h1>Upcoming Events</h1>
+    </div>
+</header>
 
-<% @events.each do |event| %>
-  <p><%= link_to event.name, event_path(event.id) %></p>
-<% end %>
+</section>
 
-#nog aanpassen naar visitor
-<%= link_to "Book now", events_path %>
+<section class="event-gallery">
+  <% @events.each do |event| %>
+  <article class="event-card">
+    <div class="event-image">
+      <%= image_tag(event.image_url, size: "250x250") %>
+    </div>
+      <h2><%= link_to event.name, event_path(event.id) %></h2>
+
+  </article>
+  <% end %>
+  <%= link_to "Book now", events_path %>
+</section>
+</section>
