@@ -1,6 +1,6 @@
 <%= form_for @visitor do |f| %>
 
-  <%= f.label : event_id %>
+  <%= f.label :event_id %>
   <%= f.collection_select(:event_id, Event.all, :id, :name)%>
 
   <%= f.label :first_name %>
