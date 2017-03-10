@@ -9,6 +9,7 @@ header {
    align-items: center;
 }
 
+
 .wrapper {
   max-width: 940px;
   margin: 10px auto;
@@ -20,7 +21,7 @@ header {
 }
 
 body {
-  color: #4A4A4A;
+  
 }
 
 header a h1 {
@@ -29,7 +30,7 @@ header a h1 {
 
 
 .banner {
-  background-color: #D32F2F;
+  align-items: center;
 }
 
 .banner h1, .banner h3 {
@@ -39,10 +40,9 @@ header a h1 {
 .event-card {
   background-color: #ECECEC;
   display: inline-block;
-  width: 300px;
-  height: 300px;
-
-
+  width: 290px;
+  height: 350px;
+  margin: 20px 5px;
 }
 
 .event-card a {
@@ -59,7 +59,6 @@ header a h1 {
   width: 900px;
   display: flex;
   flex-wrap: wrap;
-  background-color: red;
   margin: 40px auto;
   padding: 0;
   list-style: none;
@@ -88,22 +87,6 @@ header a h1 {
   float: left; /* logo will appear at the left side of the header */
 }
 
-header nav {
-  float:right; /* logo will appear at the right side of the header */
-  margin-top: 15px;
-}
-
 .banner {
   clear: both; /* allows banner to be clear of floated elements in header */
-}
-
-header nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-header nav ul li {
-  display: inline-block;
-  margin-left: 20px;
-  float: right;
 }
