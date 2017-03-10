@@ -21,7 +21,7 @@ header {
 }
 
 body {
-  
+
 }
 
 header a h1 {
@@ -38,7 +38,6 @@ header a h1 {
 }
 
 .event-card {
-  background-color: #ECECEC;
   display: inline-block;
   width: 290px;
   height: 350px;
@@ -67,7 +66,7 @@ header a h1 {
 }
 
 .event-image {
-  border-radius: 4px;
+  border-radius: 12px;
   margin: 0px auto;
   max-width: 250px;
   max-height: 250px;
@@ -89,4 +88,13 @@ header a h1 {
 
 .banner {
   clear: both; /* allows banner to be clear of floated elements in header */
+}
+
+.book-button {
+  font-size: 28px;
+}
+
+.body_show {
+  max-width: 960px;
+  margin: auto;
 }

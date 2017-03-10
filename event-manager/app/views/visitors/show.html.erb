@@ -1,3 +1,4 @@
+<section class="body_show">
 <h1><%= @visitor.first_name %> <%= @visitor.last_name %></h1>
 
 <%= link_to "[Edit]",
@@ -6,7 +7,8 @@ edit_visitor_path(@visitor.id) %>
 
 
 <p>Age: <%= @visitor.age %></p>
-<%= image_tag @visitor.image_url %>
+<%= image_tag @visitor.image_url, size: "250x250" %>
 
 <p><%= link_to @visitor.event.name, event_path(@visitor.event_id)  %></p>
-<%= image_tag @visitor.event.image_url %>
+<%= image_tag @visitor.event.image_url, size: "250x250" %>
+</section>
