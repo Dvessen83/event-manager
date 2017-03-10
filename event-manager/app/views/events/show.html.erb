@@ -1,23 +1,11 @@
-<h1><%= @event.name %></h1>
 
-<%= image_tag @event.image_url %>
+<section class="body_show">
+<h1><%= @event.name %></h1>
+<%= image_tag @event.image_url, size: "250x250" %>
 
 <p>Date: <%= @event.date %></p>
 <p>Genre: <%= @event.genre %></p>
 <p>Maximum amount of visitors: <%= @event.capacity %></p>
 
-
 <%= link_to "Book now", new_visitor_path %>
-
-<h4>List of Visitors</h4>
-
-<% if @event.visitors.any? %>
-  <ul>
-    <% @event.visitors.each do |visitor| %>
-      <li><%= link_to (visitor.first_name + " " + visitor.last_name),
-      visitor_path(visitor.id) %></li>
-    <% end %>
-  </ul>
-<% else %>
-  <p>There are no visitors for this event.</p>
-<% end %>
+</section>
