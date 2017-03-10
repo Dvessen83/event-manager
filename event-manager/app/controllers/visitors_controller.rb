@@ -27,6 +27,7 @@ class VisitorsController < ApplicationController
 
       redirect_to @visitor
     else
+      flash[:error] = "I'm sorry, this event is full. Try another :)"
       render 'new'
     end
 
@@ -48,6 +49,7 @@ class VisitorsController < ApplicationController
       @visitor.update_attributes(visitor_params)
       redirect_to @visitor
     else
+      flash[:error] = "I'm sorry, this event is full. Try another :)"
       render "edit"
     end
 
