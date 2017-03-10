@@ -3,3 +3,6 @@
 <% @events.each do |event| %>
   <p><%= link_to event.name, event_path(event.id) %></p>
 <% end %>
+
+#nog aanpassen naar visitor
+<%= link_to "Book now", events_path %>
