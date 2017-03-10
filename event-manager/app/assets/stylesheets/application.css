@@ -1,12 +1,92 @@
-* {
- font-family: Arial; sans-serif
+header {
+  max-width: 940px;
+   width: 100%;
+   margin: 0 auto;
+
+   display:flex;
+   flex-direction: row
+   justify-content: space-between;
+   align-items: center;
 }
-h1, h3 {
- font-family: "Comic Sans MS";
+
+
+.wrapper {
+  max-width: 940px;
+  margin: 10px auto;
+  padding: 10px;
 }
-h1 {
- color: #D32F2F ;
+
+.banner, footer {
+  text-align: center;
 }
-h3 {
- color: #00AA86 ;
+
+body {
+  
+}
+
+header a h1 {
+  color: #4A4A4A;
+}
+
+
+.banner {
+  align-items: center;
+}
+
+.banner h1, .banner h3 {
+  color: white;
+}
+
+.event-card {
+  background-color: #ECECEC;
+  display: inline-block;
+  width: 290px;
+  height: 350px;
+  margin: 20px 5px;
+}
+
+.event-card a {
+  background-color: #D32F2F;
+  color: white;
+}
+
+.event-card a:hover {
+  background-color: #4A4A4A;
+  color: white;
+}
+
+.event-gallery {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+  align-items: center;/* remove bullet points */
+}
+
+.event-image {
+  border-radius: 4px;
+  margin: 0px auto;
+  max-width: 250px;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.event-card a {
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+.logo, nav {
+  display: inline-block; /* logo and nav will appear in same line */
+}
+
+.logo {
+  float: left; /* logo will appear at the left side of the header */
+}
+
+.banner {
+  clear: both; /* allows banner to be clear of floated elements in header */
 }
